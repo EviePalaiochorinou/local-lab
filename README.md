@@ -43,6 +43,35 @@ Directed http requests from a front-end react app to a back-end RESTful API buil
 
 Used state and effect hooks to control the flow of information between components, and to conditionally render components for minimal reloading and enhanced user experience.
 
+## Instructions
+MONGO DB (Database)
+1.	Download mongodb/brew:
+brew tap mongodb/brew
+
+2.	Install mongodb:
+brew install mongodb-community@5.0
+
+3.	Keep mongodb running in the background:
+brew services start mongodb-community@5.0
+
+Any issues? See documentation:
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+
+4.	NPM Install (bundle in client)
+cd client > npm install
+
+5. NPM Install (bundle in server)
+cd server > npm install
+
+6. Install nodemon globally (type command from anywhere)
+npm install --global nodemon
+
+7. Run server (starts express)
+cd server > nodemon index.js
+
+8. Run client (starts react)
+cd client > npm start 
+
 ## Planning & Work-style
 
 * Database diagramming (miro) - outlining initial database schemas
@@ -81,7 +110,7 @@ Used state and effect hooks to control the flow of information between component
 * Mongo Atlas - hosted mongoDB production database
 * Mongoose - ODM for MongoDB
 
-### Autentication
+### Authentication
 
 * Passport - password hashing and comparision with user input
 * Passport JWT - issuance of JSON WEB TOKENS (based on public-key cryptography) used for user authorization purposes
